@@ -12,6 +12,8 @@ import { useState, useTransition } from "react"
 import { Button } from "./ui/button"
 import { DialogClose } from "@radix-ui/react-dialog"
 import { usePathname, useRouter } from "next/navigation"
+import { deleteDocument } from "@/actions/actions"
+import { toast } from "sonner"
 
 function DeleteDocument() {
     const [isOpen, setIsOpen] = useState(false)
