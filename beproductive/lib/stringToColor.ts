@@ -5,7 +5,7 @@ function stringToColor(str: string) {
     }
 
     const c = (hash & 0x00ffffff).toString(16).toUpperCase()
-    return "#" + "0000".substring(0, 6 - c.length) + c
+    return "#" + "00000".substring(0, 6 - c.length) + c
 }
 
 export default stringToColor

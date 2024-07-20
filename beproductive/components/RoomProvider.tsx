@@ -20,8 +20,10 @@ function RoomProvider({ roomId, children }: {
         >
             <ClientSideSuspense fallback={<LoadingSpinner />}>
                 <LiveCursorProvider>
-                {children}
+                    {children}
                 </LiveCursorProvider>
+                
+                {/* {children} */}
             </ClientSideSuspense>
         </RoomProviderWrapper>
     )

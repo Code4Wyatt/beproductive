@@ -9,12 +9,21 @@ function Plan({ id }: { id: string }) {
     const [data, loading, error] = useDocumentData(doc(db, "documents", id))
     const [input, setInput] = useState("")
     const [isUpdating, startTransition] = useTransition()
+    // const isOwner = useOwner()
 
     useEffect(() => {
         if (data) {
             setInput(data.title)
         }
     }, [data])
+
+    useEffect(() => {
+        if (error) {
+            console.error("Error fetching document:", error)
+        }
+    }, [error])
+
+    console.log('page')
 
     const updateTitle = (e: FormEvent) => {
         e.preventDefault();
@@ -28,24 +37,26 @@ function Plan({ id }: { id: string }) {
         }
     }
 
-    return <div>
-                <div className='flex max-w-6xl mx-auto justify-between pb-b'>
-                    <form className="flex flex-1 space-x-2" onSubmit={updateTitle}>
-                        {/** Update title */}
-                        <Input value={input} onChange={(e) => setInput(e.target.value)} />
+    return (
+        <div>
+            <div className='flex max-w-6xl mx-auto justify-between pb-5'>
+                <form className="flex flex-1 space-x-2" onSubmit={updateTitle}>
+                    <Input value={input} onChange={(e) => setInput(e.target.value)} />
 
-                        <Button disabled={isUpdating} type="submit">
-                            {isUpdating ? "Updating..." : "Update"}
-                        </Button>
-                    </form>
-                </div>
-                <div>
-                    {/** Manage users */}
-
-                    {/**  Avatars */}
-                </div>
-                {/** Collb Editor */}
+                    <Button disabled={isUpdating} type="submit">
+                        {isUpdating ? "Updating..." : "Update"}
+                    </Button>
+                </form>
             </div>
+            <div>
+                {/** Manage users */}
+
+
+                {/**  Avatars */}
+            </div>
+            {/** Collb Editor */}
+
+        </div>)
 }
 
 export default Plan

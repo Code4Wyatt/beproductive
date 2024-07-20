@@ -1,7 +1,7 @@
 import { auth } from "@clerk/nextjs/server"
 import RoomProvider from "@/components/RoomProvider"
 
-function PlanLayout({ 
+function PlanLayout({
     children,
     params: { id } 
 }: { 
