@@ -4,6 +4,7 @@ import { Button } from './ui/button'
 import { doc, updateDoc } from 'firebase/firestore'
 import { db } from '@/firebase'
 import { useDocumentData } from 'react-firebase-hooks/firestore'
+import CollaborativeEditor from './CollaborativeEditor'
 
 function Plan({ id }: { id: string }) {
     const [data, loading, error] = useDocumentData(doc(db, "documents", id))
@@ -54,7 +55,9 @@ function Plan({ id }: { id: string }) {
 
                 {/**  Avatars */}
             </div>
-            {/** Collb Editor */}
+
+            <hr className="pb-10" />
+            <CollaborativeEditor />
 
         </div>)
 }
