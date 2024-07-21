@@ -15,7 +15,7 @@ function Avatars() {
 
     const all = [self, ...others]
 
-    return <div className="flex gap-2 items-center">
+    return <div className="block md:flex gap-2 items-center pl-3 md:pl-0">
         <p className="font-light text-sm">Users currently editing this page </p>
 
         <div className="flex -space-x-5">

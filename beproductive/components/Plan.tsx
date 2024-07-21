@@ -43,7 +43,7 @@ function Plan({ id }: { id: string }) {
 
     return (
         <div className='flex-1 h-full bg-white p-5'>
-            <div className='flex max-w-6xl mx-auto justify-between pb-5'>
+            <div className='block md:flex max-w-6xl mx-auto justify-between pb-5'>
                 <form className="flex flex-1 space-x-2" onSubmit={updateTitle}>
                     <Input value={input} onChange={(e) => setInput(e.target.value)} />
 
@@ -51,13 +51,27 @@ function Plan({ id }: { id: string }) {
                         {isUpdating ? "Updating..." : "Update"}
                     </Button>
 
+                    <div className='hidden md:flex'>
+                        {isOwner && (
+                            <>
+                                <div className='pr-1'>
+                                    <InviteUser />
+                                </div>
+                                <div>
+                                    <DeleteDocument />
+                                </div>
+                            </>
+                        )}
+                    </div>
+                </form>
+                <div className='flex space-x-3 md:hidden justify-end pt-1 md w-50'>
                     {isOwner && (
                         <>
                             <InviteUser />
                             <DeleteDocument />
                         </>
                     )}
-                </form>
+                </div>
             </div>
 
             <div className='flex max-w-6xl mx-auto justify-between items-center mb-5'>

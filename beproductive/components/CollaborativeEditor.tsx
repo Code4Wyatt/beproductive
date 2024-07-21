@@ -75,7 +75,7 @@ function CollaborativeEditor() {
         }`
 
     return <div className='max-w-6xl mx-auto'>
-        <div className='flex items-center gap-2 justify-end mb-10'>
+        <div className='block md:flex items-center gap-2 justify-end align-end mb-10 space-y-1 md:space-y-0'>
             <TranslateDocument doc={doc} />
             <ChatToDocument doc={doc} />
 

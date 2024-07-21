@@ -10,7 +10,6 @@ import {
     BreadcrumbSeparator,
   } from "@/components/ui/breadcrumb"
 import { Fragment } from "react"
-  
 
 function Breadcrumbs() {
     const path = usePathname()
@@ -33,7 +32,7 @@ function Breadcrumbs() {
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
                     {isLast ? (
-                        <BreadcrumbPage className="text-white">{segment}</BreadcrumbPage>
+                        <BreadcrumbPage className="text-white text-sm md:text-1xl">{segment}</BreadcrumbPage>
                     ) : (
                         <BreadcrumbLink href={href}>{segment}</BreadcrumbLink>
                     )}

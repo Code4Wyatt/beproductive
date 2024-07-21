@@ -6,24 +6,25 @@ import Breadcrumbs from "./Breadcrumbs"
 function Header() {
     const { user } = useUser()
 
-    return <div className="flex items-center text-white justify-between p-5 bg-gray-950">
-        {user && (
-            <h1 className="text-2xl">BeProductive</h1>
-        )}
+    return <div className="flex items-center text-white justify-between p-5 bg-gray-950 sm:w-full">
+                {user && (
+                    <h1 className="text-md md:text-2xl">BeProductive</h1>
+                )}
+                
+                <div className="hidden md:flex">
+                    <Breadcrumbs />
+                </div>
 
-        <Breadcrumbs />
+                <div>
+                    <SignedOut>
+                        <SignInButton />
+                    </SignedOut>
 
-        <div>
-            <SignedOut>
-                <SignInButton />
-            </SignedOut>
-
-            <SignedIn>
-                <UserButton />
-            </SignedIn>
-        </div>
-
-    </div>
+                    <SignedIn>
+                        <UserButton />
+                    </SignedIn>
+                </div>
+            </div>   
 }
 
 export default Header

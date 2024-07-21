@@ -105,8 +105,6 @@ function TranslateDocument({ doc }: { doc: Y.Doc }) {
                         <DialogTitle>Translate the document</DialogTitle>
                         <DialogDescription>
                             Select a language and AI will translate a summary of the document in the selected language.
-
-                            Note: Documents with images and videos in may produce results that include the code for these elements, this is currently being reviewed to be fixed.
                         </DialogDescription>
 
                         <hr className="mt-5" />
