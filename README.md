@@ -9,11 +9,6 @@
 - [Description](#-description)
 - [Technologies Used](#-technologies-used)
 - [Deployment](#-deployment)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Screenshots](#-screenshots)
-- [Contributing](#-contributing)
-- [License](#-license)
 
 ## 📜 Description
 Collaborative document sharing application, allowing users to invite and collaborate on plans and documents.
