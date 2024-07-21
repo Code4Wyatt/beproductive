@@ -23,6 +23,6 @@ Collaborative document sharing application, allowing users to invite and collabo
 ![Clerk Auth](https://img.shields.io/badge/Clerk_Auth-000000?style=for-the-badge&logo=clerk&logoColor=white)
 
 ## 🚀 Deployment
-This project can be viewed by visiting: [BeProductive](https://beproductive-24k07uymj-code4wyatts-projects.vercel.app)
+This project can be viewed by visiting: [BeProductive](https://beproductive-15hlvvk4e-code4wyatts-projects.vercel.app)
 
 
