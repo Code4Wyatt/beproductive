@@ -6,9 +6,9 @@ import Breadcrumbs from "./Breadcrumbs"
 function Header() {
     const { user } = useUser()
 
-    return <div className="flex items-center justify-between p-5">
+    return <div className="flex items-center text-white justify-between p-5 bg-gray-950">
         {user && (
-            <h1 className="text-2xl">{user?.firstName}{`'s`} Space</h1>
+            <h1 className="text-2xl">DocCollab</h1>
         )}
 
         <Breadcrumbs />

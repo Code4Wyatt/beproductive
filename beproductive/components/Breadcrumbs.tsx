@@ -17,13 +17,13 @@ function Breadcrumbs() {
     const segments = path.split("/")
 
     return <Breadcrumb>
-    <BreadcrumbList>
+    <BreadcrumbList className="text-white">
       <BreadcrumbItem>
         <BreadcrumbLink href="/">Home</BreadcrumbLink>
       </BreadcrumbItem>
    
         {segments.map((segment, index) => {
-            if (!segment) return null
+            if (!segment || index === 1) return null
 
             const href = `/${segments.slice(0, index + 1).join("/")}`
             const isLast = index === segments.length - 1
@@ -33,7 +33,7 @@ function Breadcrumbs() {
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
                     {isLast ? (
-                        <BreadcrumbPage>{segment}</BreadcrumbPage>
+                        <BreadcrumbPage className="text-white">{segment}</BreadcrumbPage>
                     ) : (
                         <BreadcrumbLink href={href}>{segment}</BreadcrumbLink>
                     )}
