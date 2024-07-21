@@ -8,7 +8,7 @@ function Header() {
 
     return <div className="flex items-center text-white justify-between p-5 bg-gray-950">
         {user && (
-            <h1 className="text-2xl">DocCollab</h1>
+            <h1 className="text-2xl">BeProductive</h1>
         )}
 
         <Breadcrumbs />

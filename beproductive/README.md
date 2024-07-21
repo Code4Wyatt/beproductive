@@ -6,7 +6,13 @@ Collaborative document sharing application, allowing users to invite and collabo
 React
 Next.js
 Tailwind CSS
+Shadcn
 Firebase
+Cloudflare Workers
+OpenAI
+Liveblocks
+Clerk Auth
+
 
 ## Deployment
 

@@ -80,12 +80,12 @@ function Sidebar() {
             <div className="flex py-4 flex-col space-y-4 md:max-w-36"> 
                 {groupedData.owner.length === 0 ? (
                     <h2 className="text-gray-500 font-semibold text-sm">
-                        No Plans Found
+                        No Documents Found
                     </h2>
                 ) : (
                     <>
                         <h2 className="text-gray-500 font-semibold text-sm">
-                            My Plans
+                            My Documents
                         </h2>
                         {groupedData.owner.map((doc) => (
                             <SidebarOption key={doc.id} id={doc.id} href={`/doc/${doc.id}`} />
