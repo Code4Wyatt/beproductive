@@ -1,8 +1,6 @@
 # BeProductive
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/Code4Wyatt/beproductive/build.yml?branch=main)
-![Version](https://img.shields.io/github/package-json/v/Code4Wyatt/beproductive)
-![Website](https://img.shields.io/website?down_message=online&up_message=online&url=https%3A%2F%2Fbeproductive-24k07uymj-code4wyatts-projects.vercel.app)
+![Website](https://img.shields.io/website?down_message=online&up_message=online&url=https://beproductive-15hlvvk4e-code4wyatts-projects.vercel.app)
 
 ## 📖 Table of Contents
 - [Description](#-description)
@@ -25,6 +23,6 @@ Collaborative document sharing application, allowing users to invite and collabo
 ![Clerk Auth](https://img.shields.io/badge/Clerk_Auth-000000?style=for-the-badge&logo=clerk&logoColor=white)
 
 ## 🚀 Deployment
-This project can be viewed by visiting: [BeProductive](https://beproductive-24k07uymj-code4wyatts-projects.vercel.app)
+This project can be viewed by visiting: [BeProductive](https://beproductive-15hlvvk4e-code4wyatts-projects.vercel.app)
 
 
