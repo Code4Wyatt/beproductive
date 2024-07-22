@@ -7,7 +7,6 @@ import { useCollection } from "react-firebase-hooks/firestore"
 import {
     Sheet,
     SheetContent,
-    SheetDescription,
     SheetHeader,
     SheetTitle,
     SheetTrigger,
@@ -94,7 +93,6 @@ function Sidebar() {
                 )}
             
 
-            {/** Shared with me */}
             {groupedData.editor.length > 0 && (
                 <>
                     <h2 className="text-gray-500 font-semibold text-sm">
@@ -106,7 +104,6 @@ function Sidebar() {
                 </>
             )}
             </div>
-            {/** List */}
         </>
     )
 

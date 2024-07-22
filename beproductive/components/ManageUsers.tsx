@@ -4,18 +4,14 @@ import {
     Dialog,
     DialogContent,
     DialogDescription,
-    DialogFooter,
     DialogHeader,
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
-import { FormEvent, useState, useTransition } from "react"
+import { useState, useTransition } from "react"
 import { Button } from "./ui/button"
-import { DialogClose } from "@radix-ui/react-dialog"
-import { usePathname, useRouter } from "next/navigation"
-import { deleteDocument, inviteUserToDocument, removeUserFromDocument } from "@/actions/actions"
+import { removeUserFromDocument } from "@/actions/actions"
 import { toast } from "sonner"
-import { Input } from "./ui/input"
 import { useUser } from "@clerk/nextjs"
 import { useCollection } from "react-firebase-hooks/firestore"
 import { collectionGroup, query, where } from "firebase/firestore"

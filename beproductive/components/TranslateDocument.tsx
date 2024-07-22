@@ -100,7 +100,7 @@ function TranslateDocument({ doc }: { doc: Y.Doc }) {
                 <Button asChild variant="outline">
                     <DialogTrigger>Translate</DialogTrigger>
                 </Button>
-                <DialogContent>
+                <DialogContent aria-label="Translate document content">
                     <DialogHeader>
                         <DialogTitle>Translate the document</DialogTitle>
                         <DialogDescription>
