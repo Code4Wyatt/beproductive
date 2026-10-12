@@ -1,6 +1,6 @@
 # BeProductive
 
-!![Website](https://img.shields.io/website?down_message=online&up_message=online&url=https://beproductive-15hlvvk4e-code4wyatts-projects.vercel.app)
+![Website](https://img.shields.io/website?down_message=online&up_message=online&url=https://beproductive-15hlvvk4e-code4wyatts-projects.vercel.app)
 
 ## 📖 Table of Contents
 - [Description](#-description)
